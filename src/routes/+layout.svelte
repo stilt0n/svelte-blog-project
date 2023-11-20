@@ -5,12 +5,16 @@
 	import Header from './header.svelte';
 	import Footer from './footer.svelte';
 	import '../app.css';
+	import Transition from './transition.svelte';
+	export let data;
 </script>
 
 <div class="layout">
 	<Header />
 	<main>
-		<slot />
+		<Transition url={data.url}>
+			<slot />
+		</Transition>
 	</main>
 	<Footer />
 </div>

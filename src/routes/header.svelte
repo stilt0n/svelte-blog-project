@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import ThemeToggle from './themeToggle.svelte';
 	// Could refactor using text-transform: capitalize and by stripping '/' from start of routes
 	const hrefLabels = ['About', 'Contact'];
 </script>
@@ -18,7 +19,7 @@
 			<a href="rss.xml" target="_blank">RSS</a>
 		</li>
 	</ul>
-	<button>Toggle Theme</button>
+	<ThemeToggle />
 </nav>
 
 <style>
