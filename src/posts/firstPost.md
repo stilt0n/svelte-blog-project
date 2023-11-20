@@ -8,7 +8,7 @@ categories:
 published: true
 ---
 
-# Markdown post
+## Markdown post
 
 This is an example markdown post
 

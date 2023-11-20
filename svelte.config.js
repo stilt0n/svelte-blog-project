@@ -15,6 +15,10 @@ const mdsvexOptions = {
 			return `{@html \`${html}\`}`;
 		},
 	},
+	layout: {
+		// _ is default layout
+		_: './src/mdsvex.svelte',
+	},
 };
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
